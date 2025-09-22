@@ -619,6 +619,7 @@ config THEAD_C900_ACLINT_SSWI
 	depends on SMP
 	select IRQ_DOMAIN_HIERARCHY
 	select GENERIC_IRQ_IPI_MUX
+	default y if ARCH_SOPHGO
 	help
 	  This enables support for T-HEAD specific ACLINT SSWI device
 	  support.
