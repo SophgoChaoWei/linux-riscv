@@ -19,6 +19,8 @@ config PCIE_DW_SOPHGO
 	depends on OF || ACPI
 	select IRQ_DOMAIN
 	select PCIE_DW
+	select SOPHGO_SG2044_MSI
+	default y if ARCH_SOPHGO
 	help
 	  Say Y here if you want to support the DesignWare PCIe controller in host mode
 	  for Sophgo SoCs. this PCIe controller is from DesignWare, integrated into the
